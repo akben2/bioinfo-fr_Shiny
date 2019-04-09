@@ -4,21 +4,16 @@
 # 04 /2019
 #
 # GitHub :
-# 
+# https://github.com/thomasdenecker/bioinfo-fr_Shiny
 ################################################################################
 
 ################################################################################
 # Library
 ################################################################################
 
-library(shiny)
-library(shinydashboard)
-library(DT)
-library(plotly)
-library(ggplot2)
-library(shinyWidgets)
-library(colourpicker)
-library(googleVis)
+install.packages("anyLib")
+anyLib::anyLib(c("shiny", "shinydashboard", "shinyWidgets", "DT", "plotly", 
+                 "ggplot2", "googleVis", "colourpicker"))
 
 ################################################################################
 # UI
