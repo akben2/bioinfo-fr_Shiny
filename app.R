@@ -223,7 +223,7 @@ server <- function(input, output, session) {
   output$plotAvecPlotly <- renderPlotly({
     if(!is.null(data$table)){
       plot_ly(data = data$table[input$dataTable_rows_all,], x = ~Petal.Length, y = ~Petal.Width, color = ~Species)%>%
-        layout(title = 'Petal Length-Width (ggplot2)',
+        layout(title = 'Petal Length-Width (plotly)',
                yaxis = list(title = "Petal width"),
                xaxis = list(title = "Petal length"))
     }else {
